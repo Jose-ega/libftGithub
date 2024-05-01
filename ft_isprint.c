@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jose-ega <jose-ega@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/01 16:28:41 by jose-ega          #+#    #+#             */
-/*   Updated: 2024/05/01 17:13:54 by jose-ega         ###   ########.fr       */
+/*   Created: 2024/05/01 17:16:39 by jose-ega          #+#    #+#             */
+/*   Updated: 2024/05/01 17:29:24 by jose-ega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_isascii(int c)
+int	isprint(int c)
 {
-	if (c >= 0 && c <= 122)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
+
 }
 
 /* int	main(void)
 {
 	int	c;
 
-	c = ' ';
+	c = 31;
 
-	printf("%d",ft_isascii(c));
+	printf("%d",isprint(c));
 	return (0);
 } */
