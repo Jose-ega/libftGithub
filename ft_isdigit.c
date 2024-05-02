@@ -6,11 +6,11 @@
 /*   By: jose-ega <jose-ega@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 14:50:34 by jose-ega          #+#    #+#             */
-/*   Updated: 2024/05/01 16:37:51 by jose-ega         ###   ########.fr       */
+/*   Updated: 2024/05/02 19:00:47 by jose-ega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

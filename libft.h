@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jose-ega <jose-ega@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/01 15:48:06 by jose-ega          #+#    #+#             */
-/*   Updated: 2024/05/02 19:00:52 by jose-ega         ###   ########.fr       */
+/*   Created: 2024/05/02 18:48:19 by jose-ega          #+#    #+#             */
+/*   Updated: 2024/05/02 18:58:34 by jose-ega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H /* IF NOT DEFINED */
+# define LIBFT_H
 
-int	ft_isalnum(int c)
-{
-	if (c >= '0' && c <= '9')
-		return (1);
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
+//# TUS INCLUDES
 
-/* int	main(void)
-{
-	int	c;
+# include <stdio.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
 
-	c = 'D';
+//INTS chars, voids...etc
+int	ft_isalnum(int c);
+int	ft_isalpha(int c);
+int	ft_isascii(int c);
+int	ft_isdigit(int c);
+int	ft_isprint(int c);
 
-	printf("%i",ft_isalnum(c));
-	return (0);
-} */
+#endif

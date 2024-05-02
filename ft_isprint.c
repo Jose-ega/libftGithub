@@ -6,13 +6,13 @@
 /*   By: jose-ega <jose-ega@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 17:16:39 by jose-ega          #+#    #+#             */
-/*   Updated: 2024/05/01 17:29:24 by jose-ega         ###   ########.fr       */
+/*   Updated: 2024/05/02 19:00:46 by jose-ega         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
